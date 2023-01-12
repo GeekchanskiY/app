@@ -1,0 +1,125 @@
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+header{
+    width: 100%;
+    height: 20vh;
+    background-color: #DD4B3E;
+    @media (max-width: 1000px) {
+        height: 13vh;
+    }
+    .headergrey{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        @media (max-width: 1000px) {
+            display: none;
+        }
+        background-color: #E9E9E8;
+        width: 20%;
+        height: 60vh;
+        img{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 10px;
+        }
+    }
+    .headermain{
+        margin-left: 20%;
+        width: 80%;
+        height: 20vh;
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin-left: 0;
+            height: 10vh;
+        }
+        .headername{
+            float: left;
+            font-size: 48px;
+            font-weight: 600;
+            margin-left: 5%;
+            height: 10vh;
+            margin-top: 7vh;
+            width: 40%;
+            @media (max-width: 1000px) {
+                float: none;
+                width: 100%;
+                margin-top: 0;
+                padding-top: 10px;
+                height: 5vh;
+                font-size: 32px;
+            }
+            .vkusno{
+                color: #fff;
+            }
+            .kushat{
+                color: #000;
+            }
+        }
+        .headersearch{
+            float: left;
+            height: 10vh;
+            margin-top: 7vh;
+            width: 50%;
+            margin-left: 5%;
+            @media (max-width: 1000px) {
+                float: none;
+                width: 100%;
+                margin-top: 12px;
+            }
+            input{
+                background-color: transparent;
+                border: none;
+                width: 60%;
+                border-bottom: 5px solid white;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 36px;
+                float: left;  
+                @media (max-width: 1000px) {
+                    font-size: 24px;
+                }
+            }
+            img{
+                float: left;
+                height: 36px;
+                margin-top: 12px;
+                @media (max-width: 1000px) {
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+.body{
+    position: relative;
+    min-height: 70vh;
+    @media (max-width: 1000px) {
+        min-height: 85vh;
+    }
+    width: 100%;
+    z-index: 3;
+    overflow: hidden;
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    @media (max-width: 1000px) {
+        height: 5vh;
+    }
+    a{
+        float: left;
+        width: 25%;
+        color: #000;
+        text-align: center;
+        text-decoration-color: #DD4B3E;
+        text-decoration-skip: none;
+        font-size: 32px;
+        @media (max-width: 1000px) {
+            font-size: 18px;
+        }
+    }
+}
